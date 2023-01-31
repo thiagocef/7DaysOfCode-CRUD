@@ -1,0 +1,9 @@
+    // imprime os dados concatenados
+    let saida = '',
+        i    
+    for(i = 0; i < pessoa.nome.length; i++) {
+        for(i = 0; i < pessoa.nascimento.length; i++) {
+            saida += `${pessoa.nome[i]} - ${pessoa.nascimento[i]}\n`
+        }
+    }
+    console.log(saida)
