@@ -35,7 +35,10 @@
         <p>
             Nome:
             <input type="text" class="inPesquisar">
-            <p><button type="submit" class="btnPesquisar">Pesquisar Cadastro</button></p>
+            <p>
+                <button type="submit" class="btnPesquisar">Pesquisar Cadastro</button>
+                <button type="button" class="btnExcluir">Excluir Cadastro</button>
+            </p>
             <p class="outPesquisar"></p>
         </p>
     </div>
@@ -44,11 +47,21 @@
     
     <div>
         <h3>Atualizar Cadastro</h3>
-        <p>
-            Novo nome:
-            <input type="text" class="inNovoNome">
-        </p>
-        <button type="submit" class="btnAtualizar">Atualizar Cadastro</button>
+        <form class="form jsForm">
+            <label for="nome">
+                Novo Nome:
+                <input type="text" name="nome" required class="inNovoNome jsCampo formCampo" id="nome">
+            </label>
+    
+            <p>
+                <label for="dtNascimento">
+                    Nova Data de Nascimento:
+                    <input type="date" name="dtNascimento"  class="inNovaDtNascimento jsCampo formCampo" id="dtNascimento">
+                </label>
+            </p>
+
+            <button type="button" class="btnAtualizar">Atualizar</button>
+
     </div>
    
 
@@ -58,5 +71,7 @@
     <script src="/js/pesquisar-atualizar.js"></script>
 
     <script src="/js/salvar-ler.js"></script>
+
+    <script src="/js/excluir.js"></script>
 </body>
 </html>

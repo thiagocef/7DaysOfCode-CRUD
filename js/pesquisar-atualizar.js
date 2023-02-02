@@ -12,7 +12,7 @@ function pesquisarCadastro() {
     pesquisar = inPesquisar.value
     novo = pessoa.nome.indexOf(pesquisar)
 
-    //verifica se existe no arrat=y
+    //verifica se existe no array
     for(let i = 0; i < pessoa.nome.length; i++) {
         if(novo != -1) {
             outDados.innerHTML = `"${pesquisar}" - Encontrado`

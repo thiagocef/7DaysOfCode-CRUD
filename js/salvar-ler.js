@@ -86,6 +86,8 @@ function exibirDados() {
             let p = document.createElement('p')
             p.innerHTML =  `${pessoa.nome[i]} - ${pessoa.nascimento[i]}\n`
             outDados.append(p)
+
+            console.log(`${pessoa.nome[i]} - ${pessoa.nascimento[i]}\n`)
         }
     }
 }
