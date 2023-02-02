@@ -8,6 +8,8 @@ const inNome = document.querySelector('.inNome'),
       outDados = document.querySelector('.outDados'),
       btnExibir = document.querySelector('.btnExibir')
 
+
+      
 function salvarDados() {
     const nome = inNome.value,
           num = nome.match(/[0-9]/g), //retorna os números do nome para verificação
@@ -70,6 +72,10 @@ function tratarDada(data) {
 //-- Exibir Dados --
 function exibirDados() {
     outDados.innerHTML = ''
+
+    if(!localStorage.nome && !localStorage.nascimento) {
+        alert('Não há dados cadastrados')
+    }
 
     if(localStorage.nome && localStorage.nascimento) {
         pessoa.nome = JSON.parse(localStorage.getItem('nome'))//recupera o que já existe (com o getItem) 

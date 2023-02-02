@@ -9,30 +9,54 @@
 <body>
     <h1>#7DaysOfCode - Alura (Matheus Castiglioni)</h1>
 
+    <h3>Cadastrar</h3>
     <form class="form jsForm">
         <label for="nome">
             Nome:
             <input type="text" name="nome" required class="inNome jsCampo formCampo" id="nome">
         </label>
 
-        <br>
-
-        <label for="dtNascimento">
-            Data de Nascimento:
-            <input type="date" name="dtNascimento"  class="inDtNascimento jsCampo formCampo" id="dtNascimento">
-        </label>
-
-        <br>
+        <p>
+            <label for="dtNascimento">
+                Data de Nascimento:
+                <input type="date" name="dtNascimento"  class="inDtNascimento jsCampo formCampo" id="dtNascimento">
+            </label>
+        </p>
 
         <button type="button" class="btnSalvar">Salvar</button>
 
         <button type="button" class="btnExibir">Exibir</button>
     </form>
 
+    <hr>
+
+    <div>
+        <h3>Pesquisar Cadastro</h3>
+        <p>
+            Nome:
+            <input type="text" class="inPesquisar">
+            <p><button type="submit" class="btnPesquisar">Pesquisar Cadastro</button></p>
+            <p class="outPesquisar"></p>
+        </p>
+    </div>
+
+    <hr>
+    
+    <div>
+        <h3>Atualizar Cadastro</h3>
+        <p>
+            Novo nome:
+            <input type="text" class="inNovoNome">
+        </p>
+        <button type="submit" class="btnAtualizar">Atualizar Cadastro</button>
+    </div>
+   
+
+
     <div class="outDados"></div>
 
-    <script src="/js/script.js"></script>
+    <script src="/js/pesquisar-atualizar.js"></script>
 
-    <script src="/js/save.js"></script>
+    <script src="/js/salvar-ler.js"></script>
 </body>
 </html>
